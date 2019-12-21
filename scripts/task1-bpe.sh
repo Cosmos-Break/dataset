@@ -33,7 +33,7 @@ TRGLANGS=`cut -d'-' -f2 < $PAIRS | sort -u`
 TOK=${ROOT}/tok
 BPE=${ROOT}/bpe${BPE_MOPS}
 
-BPEPATH="./scripts/subword-nmt"
+BPEPATH="./scripts/subword-nmt/subword_nmt"
 BPEAPPLY=${BPEPATH}/apply_bpe.py
 BPELEARN=${BPEPATH}/learn_joint_bpe_and_vocab.py
 
