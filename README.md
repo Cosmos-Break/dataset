@@ -13,7 +13,7 @@ the users.
 In order to fetch everything correctly, you need to clone the repository with `--recursive` flag:
 
 ```
-$ git clone --recursive https://github.com/multi30k/dataset.git multi30k-dataset
+$ git clone --recursive https://github.com/Cosmos-Break/dataset.git multi30k-dataset
 ```
 
 ### Visual features
