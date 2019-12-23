@@ -65,7 +65,7 @@ wait
 for LPAIR in `cat $PAIRS`; do
   BPEFILE="${BPE}/${LPAIR}/codes"
 
-  for TYPE in "train" "val"; do
+  for TYPE in "train"; do
     # Iterate over languages
     for LLANG in `echo $LPAIR | tr '-' '\n'`; do
       INP="${TOK}/${TYPE}.${SUFFIX}.${LLANG}"
@@ -77,7 +77,7 @@ for LPAIR in `cat $PAIRS`; do
       fi
     done
   done
-  for TYPE in "test_2016_flickr" "test_2017_flickr" "test_2017_mscoco"; do
+  for TYPE in "val" "test_2016_flickr" "test_2017_flickr" "test_2017_mscoco"; do
     # Iterate over languages
     for LLANG in `echo $LPAIR | tr '-' '\n'`; do
       INP="${TOK}/${TYPE}.${SUFFIX}.${LLANG}"
