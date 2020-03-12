@@ -17,10 +17,18 @@ def to_src_tgt_format(srcfile, tgtfile, outputfile):
         f.write(js + "\n")
     f.close()
 
+# to_src_tgt_format("data/task1/tok/train.lc.norm.tok.en", "data/task1/tok/train.lc.norm.tok.de",
+#                   "data/task1/src_tgt/train.en_de")
+# to_src_tgt_format("data/task1/tok/val.lc.norm.tok.en", "data/task1/tok/val.lc.norm.tok.de",
+#                   "data/task1/src_tgt/val.en_de")
+# to_src_tgt_format("data/task1/tok/test_2016_flickr.lc.norm.tok.en", "data/task1/tok/test_2016_flickr.lc.norm.tok.de",
+#                   "data/task1/src_tgt/test2016.en_de")
 
-to_src_tgt_format("data/task1/tok/train.lc.norm.tok.en", "data/task1/tok/train.lc.norm.tok.de",
-                  "data/task1/src_tgt/train.en_de")
-to_src_tgt_format("data/task1/tok/val.lc.norm.tok.en", "data/task1/tok/val.lc.norm.tok.de",
-                  "data/task1/src_tgt/val.en_de")
-to_src_tgt_format("data/task1/tok/test_2016_flickr.lc.norm.tok.en", "data/task1/tok/test_2016_flickr.lc.norm.tok.de",
-                  "data/task1/src_tgt/test2016.en_de")
+
+to_src_tgt_format("data/task1/bpe10000/en-de/train.lc.norm.tok.bpe.en", "data/task1/bpe10000/en-de/train.lc.norm.tok.bpe.de",
+                  "data/task1/src_tgt_bpe10000/train.en_de")
+to_src_tgt_format("data/task1/bpe10000/en-de/val.lc.norm.tok.bpe.en", "data/task1/bpe10000/en-de/val.lc.norm.tok.bpe.de",
+                  "data/task1/src_tgt_bpe10000/val.en_de")
+to_src_tgt_format("data/task1/bpe10000/en-de/test_2016_flickr.lc.norm.tok.bpe.en",
+                  "data/task1/bpe10000/en-de/test_2016_flickr.lc.norm.tok.bpe.de",
+                  "data/task1/src_tgt_bpe10000/test2016.en_de")
